@@ -21,9 +21,12 @@ html{
 .logo{
     color: #000000;
     font-family: Raleway, sans-serif;
-    font-style: 700;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+    margin-bottom: 15px;
 
 }
 .logo-span,
@@ -38,7 +41,7 @@ html{
 .nav-link{
     color: var(--primary-color);
     font-family: Roboto, sans-serif;
-    font-style: 500;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
     
@@ -60,38 +63,45 @@ html{
     background-color: #2F303A;
     padding-bottom: 200px;
     padding-top: 200px;
+    text-align: center;
 }
 
 .hero-title{
     color: var(--secondary-color);
     font-family: Roboto, sans-serif;
-    font-style: 900;
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.2;
-    text-align: center;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
+    letter-spacing: 0.06em;
 }
 
 .nav-list{
     list-style: none;
+    display: flex;
+    margin-left: 93px;
 }
 
 .head-title{
     color: var(--primary-color);
     font-family: Roboto, sans-serif;
-    font-style: 700;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 
 .names{
     color: var(--primary-color);
     font-family: Roboto, sans-serif;
-    font-style: 500;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .items-descritption{
@@ -101,37 +111,43 @@ html{
 .h2-title{
     color: var(--primary-color);
     font-family: Roboto, sans-serif;
-    font-style: 700;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
     }
 
 .p-small{
     color: var(--text-color);
     font-family: Roboto, sans-serif;
-    font-style: 400;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
 }
 
 .p-description{
     color: var(--text-color);
     font-family: Roboto, sans-serif;
-    font-style: 400;
+    font-weight: 400;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 
 .address{
     color: var(--secondary-color);
     font-family: Roboto, sans-serif;
-    font-style: 400;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
     margin-top: 20px;
     margin-left: 40px;
+    letter-spacing: 0.03em;
 }
 
 .footer{
@@ -143,29 +159,30 @@ html{
 .footer-link{
     color: var(--secondary-link-color);
     font-family: Roboto, sans-serif;
-    font-style: 400;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
     margin-top: 9px;
-    margin-left: 0px;
+    margin-left: 40px;
+    letter-spacing: 0.03em;
 }
 
 .button{
     background-color: var(--accent-color);
     color: var(--secondary-color);
     font-family: Roboto, sans-serif;
-    font-style: 700;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
     border: none;
-    border-radius: 3px;
-    width: 152px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
+    border-radius: 4px;
+    min-width: 200px;
+    height: 50px;
+    display: inline-block;
+    padding: 10px 25px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    letter-spacing: 0.06em;
 }
 
 body{
@@ -180,6 +197,8 @@ a{
 
 ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .link-text{
@@ -199,10 +218,11 @@ ul{
 .logofooter{
     color: var(--secondary-color);
     font-family: Raleway, sans-serif;
-    font-style: 700;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     margin-left: 40px;
+    letter-spacing: 0.03em;
 }
 
 .team{
@@ -233,17 +253,15 @@ ul{
     margin-bottom: 0;
 }
 
-.header-nav{
+.header-nav, 
+.link-list
+{
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .nav-list{
-    display: flex;
-}
-
-
-.link-list{
     display: flex;
 }
 
@@ -251,3 +269,56 @@ ul{
     margin-left: 50px;
 }
 
+.link-list{
+    margin-left: auto;
+}
+
+.header-nav{
+    margin-bottom: 0;
+
+}
+
+.features{
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-item{
+    width: 270px;
+}
+
+.images{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    margin: -1px;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  } 
+
+.images_3{
+    width: 370px;
+}
+
+.people{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team_card{
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 1px 0px #00000033;
+    box-shadow: 0px 1px 1px 0px #00000024;
+    box-shadow: 0px 1px 3px 0px #0000001F;
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+}
